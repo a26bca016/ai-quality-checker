@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Quality Checker</title>
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External JavaScript file -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">✦</div>
+            <h1>AI Prompt Quality Checker</h1>
+            <p>
+                Evaluate your AI prompts and improve your
+                prompt engineering skills.
+            </p>
+        </header>
+
+        <!-- Main Application -->
+        <main class="main-content">
+
+            <!-- Left Side: Prompt Input -->
+            <section class="input-card">
+
+                <h2>✍️ Enter Your Prompt</h2>
+
+                <p class="description">
+                    Write or paste your AI prompt below
+                    to evaluate its quality.
+                </p>
+
+                <label for="promptInput">Your AI Prompt</label>
+
+                <textarea
+                    id="promptInput"
+                    placeholder="Example: Act as a professional teacher. Your task is to explain artificial intelligence to college students. Provide simple examples. Use clear and simple English. Present the answer in bullet points."
+                ></textarea>
+
+                <div class="character-count">
+                    <span id="charCount">0 characters</span>
+                </div>
+
+                <!-- Error Message -->
+                <p id="errorMessage" class="error-message" role="alert">
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="button-group">
+
+                    <button id="checkBtn" class="primary-btn">
+                        🔍 Check Prompt
+                    </button>
+
+                    <button id="sampleBtn" class="sample-btn">
+                        📄 Load Sample
+                    </button>
+
+                    <button id="clearBtn" class="clear-btn">
+                        ↻ Clear
+                    </button>
+
+                </div>
+
+                <!-- Information -->
+                <div class="info-box">
+                    <h3>💡 Prompt Engineering Tip</h3>
+                    <p>
+                        A good AI prompt should include a role,
+                        task, context, constraints, and output format.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Right Side: Analysis Results -->
+            <section class="result-card">
+
+                <h2>📊 Prompt Analysis Results</h2>
+
+                <p class="description">
+                    Your prompt quality analysis will appear here.
+                </p>
+
+                <!-- Score Section -->
+                <div class="score-section">
+
+                    <div class="score-circle">
+                        <span id="scoreValue">0</span>
+                        <small>/ 100</small>
+                    </div>
+
+                    <h3 id="rating">Not Analyzed</h3>
+
+                    <p id="ratingDescription">
+                        Check your prompt to see its quality.
+                    </p>
+
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="progress-container">
+
+                    <div class="progress-label">
+                        <span>Prompt Quality Score</span>
+                        <span id="progressPercent">0%</span>
+                    </div>
+
+                    <div class="progress-track">
+                        <div id="progressBar" class="progress-bar">
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Component Analysis -->
+                <div class="component-section">
+
+                    <h3>Component Analysis</h3>
+
+                    <div id="componentResults">
+
+                        <div class="empty-state">
+                            <span>📝</span>
+                            <p>
+                                Your prompt analysis will appear here.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Improvement Suggestions -->
+                <div class="suggestion-section">
+
+                    <h3>💡 Improvement Suggestions</h3>
+
+                    <div id="suggestions">
+
+                        <p class="suggestion-placeholder">
+                            Suggestions will appear after analysis.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>
+                AI Prompt Quality Checker |
+                Learn • Practice • Improve
+            </p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
